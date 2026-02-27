@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Diplômes par langue
     const diplomaMap = {
-        fr: 'MEDIENE Manil - 2542065 (1) (1).pdf',
+        fr: 'Attestation TCF Tout public 2026.02.08.pdf',
         ar: '',
         ang: 'DZ01524504750-17-01-2025-ETRF (1).pdf'
     };
@@ -223,7 +223,7 @@ function setupAnimations() {
     }, observerOptions);
 
     // Observer tous les éléments avec animation
-    document.querySelectorAll('.card, .education-item, .gallery-item, .language-item').forEach(el => {
+    document.querySelectorAll('.card, .education-item, .gallery-item, .script-item, .language-item').forEach(el => {
         el.classList.add('loading');
         observer.observe(el);
     });
