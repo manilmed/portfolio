@@ -213,52 +213,10 @@ body::after {
     transition: transform 0.3s ease;
 }
 
-.profile-image:hover {
-    transform: scale(1.05);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
-}
 
-.profile-image:hover img {
-    transform: scale(1.1);
-}
 
-.profile-image::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(135deg, rgba(79, 70, 229, 0.2), rgba(124, 58, 237, 0.2));
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    z-index: 1;
-}
 
-.profile-image:hover::before {
-    opacity: 1;
-}
 
-.profile-image::after {
-    content: 'Ajouter une photo';
-    position: absolute;
-    bottom: -30px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: var(--primary-color);
-    color: white;
-    padding: 5px 15px;
-    border-radius: 20px;
-    font-size: 0.9rem;
-    opacity: 0;
-    transition: opacity 0.3s ease, bottom 0.3s ease;
-    z-index: 2;
-}
-
-.profile-image:hover::after {
-    opacity: 1;
-    bottom: -40px;
-}
 
 .hero-title {
     font-size: 3rem;
